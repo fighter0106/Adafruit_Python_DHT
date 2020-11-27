@@ -37,7 +37,7 @@ else:
     print('Usage: sudo ./Adafruit_DHT.py [11|22|2302] <GPIO pin number>')
     print('Example: sudo ./Adafruit_DHT.py 2302 4 - Read from an AM2302 connected to GPIO pin #4')
     sys.exit(1)
-while 1:
+while True:
 	humidity, temperature= Adafruit_DHT.read_retry(sensor, pin)
 	h0, t0= Adafruit_DHT.read_retry(sensor, pin)
 	SwitchStatus = GPIO.input(24)
